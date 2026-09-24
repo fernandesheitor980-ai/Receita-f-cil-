@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Receita Fácil - receitas doces e salgadas fáceis de preparar.">
+<meta name="theme-color" content="#ff7043">
+<title>Receita Fácil 🍴</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+<nav class="navbar"><div class="logo">🍴 Receita Fácil</div><a href="#receitas" class="nav-link">Receitas</a></nav>
+<div class="hero-content"><h1>Receitas deliciosas para todos os momentos</h1><p>Encontre receitas doces e salgadas fáceis de fazer.</p><a href="#receitas" class="hero-button">Ver receitas</a></div>
+</header>
+<main><section class="container" id="receitas">
+<div class="section-title"><span>🍽️</span><h2>Encontre sua receita</h2><p>Escolha uma categoria ou pesquise pelo nome.</p></div>
+<div class="search-box"><span>🔎</span><input type="text" id="search" placeholder="Procure uma receita..." autocomplete="off"></div>
+<div class="categories">
+<button class="category active" data-category="todos">Todas</button>
+<button class="category" data-category="doce">🍰 Doces</button>
+<button class="category" data-category="salgada">🍕 Salgadas</button>
+<button class="category" data-category="bolo">🎂 Bolos</button>
+<button class="category" data-category="massa">🍝 Massas</button>
+</div>
+<div id="recipes" class="recipes-grid">
+<article class="recipe-card" data-category="doce bolo" data-name="bolo de chocolate"><div class="recipe-image chocolate">🎂</div><div class="recipe-content"><span class="tag">🍰 Doce</span><h3>Bolo de Chocolate</h3><p>Fofinho, delicioso e fácil de fazer.</p><button class="recipe-button" data-recipe="bolo">Ver receita</button></div></article><article class="recipe-card" data-category="doce" data-name="brigadeiro"><div class="recipe-image brigadeiro">🍫</div><div class="recipe-content"><span class="tag">🍫 Doce</span><h3>Brigadeiro</h3><p>O clássico brasileiro que todo mundo ama.</p><button class="recipe-button" data-recipe="brigadeiro">Ver receita</button></div></article><article class="recipe-card" data-category="salgada massa" data-name="lasanha"><div class="recipe-image lasanha">🍝</div><div class="recipe-content"><span class="tag">🍝 Salgada</span><h3>Lasanha</h3><p>Uma lasanha cremosa para o almoço.</p><button class="recipe-button" data-recipe="lasanha">Ver receita</button></div></article><article class="recipe-card" data-category="salgada" data-name="hamburguer"><div class="recipe-image hamburguer">🍔</div><div class="recipe-content"><span class="tag">🍔 Salgada</span><h3>Hambúrguer Caseiro</h3><p>Hambúrguer suculento feito em casa.</p><button class="recipe-button" data-recipe="hamburguer">Ver receita</button></div></article><article class="recipe-card" data-category="doce" data-name="pudim"><div class="recipe-image pudim">🍮</div><div class="recipe-content"><span class="tag">🍮 Doce</span><h3>Pudim</h3><p>Cremoso e com aquela calda deliciosa.</p><button class="recipe-button" data-recipe="pudim">Ver receita</button></div></article><article class="recipe-card" data-category="salgada massa" data-name="pizza"><div class="recipe-image pizza">🍕</div><div class="recipe-content"><span class="tag">🍕 Salgada</span><h3>Pizza Caseira</h3><p>Massa fácil e cobertura deliciosa.</p><button class="recipe-button" data-recipe="pizza">Ver receita</button></div></article>
+</div>
+<div id="no-results" class="no-results">😕 Nenhuma receita encontrada.</div>
+</section></main>
+<footer><div class="footer-content"><h2>🍴 Receita Fácil</h2><p>Receitas simples, deliciosas e fáceis de preparar.</p><span>© 2026 Receita Fácil</span></div></footer>
+<div class="modal" id="recipe-modal" aria-hidden="true"><div class="modal-content"><button class="close-modal" id="close-modal" aria-label="Fechar receita">×</button><div id="recipe-details"></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>
